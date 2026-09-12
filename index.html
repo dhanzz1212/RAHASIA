@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Happy Birthday 🥳</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Great+Vibes&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+
+    <!-- =========================================
+         PASSWORD SCREEN
+    ========================================== -->
+
+    <div id="passwordScreen" class="password-screen">
+
+        <div class="password-box">
+
+            <!-- GAMBAR BACKGROUND PASSWORD -->
+            <img
+                src="rtyu.jpeg"
+                class="password-background"
+                alt="Background Password">
+
+
+            <!-- LAPISAN GELAP -->
+            <div class="password-overlay"></div>
+
+
+            <!-- ISI PASSWORD -->
+            <div class="password-content">
+
+                <div class="lock-icon">
+                    🔒
+                </div>
+
+
+                <h2>
+                    Website Pribadi
+                </h2>
+
+
+                <p>
+                    Masukkan password untuk membuka
+                    website ulang tahun ini.
+                </p>
+
+
+                <input
+                    type="password"
+                    id="passwordInput"
+                    placeholder="Masukkan Password"
+                    autocomplete="off">
+
+
+                <button
+                    type="button"
+                    onclick="checkPassword()">
+
+                    🔓 Buka Website
+
+                </button>
+
+
+                <p id="errorText"></p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =========================================
+         BACKGROUND WEBSITE
+    ========================================== -->
+
+    <img
+        src="backgroun.jpeg"
+        class="background"
+        alt="Background">
+
+
+    <div class="gradient-bg"></div>
+
+    <div class="overlay"></div>
+
+    <div class="stars"></div>
+
+    <div class="particles"></div>
+
+
+
+    <!-- =========================================
+         MAIN CONTENT
+    ========================================== -->
+
+    <main id="mainContent">
+
+
+        <!-- =====================================
+             HERO
+        ====================================== -->
+
+        <header class="hero">
+
+            <h1 class="fixed-text">
+                HAPPY BIRTHDAY
+            </h1>
+
+
+            <p class="hero-subtitle">
+                Untuk seseorang yang sangat berharga ❤️
+            </p>
+
+        </header>
+
+
+
+        <div class="container">
+
+
+            <!-- =================================
+                 CARD UCAPAN
+            ================================== -->
+
+            <section class="card reveal">
+
+
+                <span class="mini-text">
+                    ✨ Spesial untuk abang terbaik ✨
+                </span>
+
+
+                <h2>
+                    Untuk Dhanny 🎂
+                </h2>
+
+
+                <p class="message">
+
+                    Selamat ulang tahun.
+
+                    <br><br>
+
+                    Semoga panjang umur,
+                    sehat selalu,
+                    dimudahkan segala urusannya,
+                    diberikan rezeki yang melimpah,
+                    selalu dikelilingi orang-orang baik,
+                    dan semua impianmu satu per satu
+                    menjadi kenyataan.
+
+                    <br><br>
+
+                    Terima kasih sudah menjadi pribadi
+                    yang kuat, penyayang, dan selalu
+                    memberikan kebahagiaan untuk
+                    orang-orang di sekitarmu.
+
+                    <br><br>
+
+                    Semoga tahun ini menjadi tahun
+                    terbaik dalam hidupmu.
+
+                    <br><br>
+
+                    Happy Birthday 🎂
+
+                </p>
+
+
+
+                <!-- MUSIK -->
+
+                <audio id="birthdayMusic">
+
+                    <source
+                        src="happy-birthday.mp3"
+                        type="audio/mpeg">
+
+                </audio>
+
+
+                <button
+                    class="music-btn"
+                    onclick="playMusic(this)">
+
+                    ▶ Putar Musik
+
+                </button>
+
+            </section>
+
+
+
+            <!-- =================================
+                 GALLERY
+            ================================== -->
+
+            <section class="gallery-box reveal">
+
+
+                <h2>
+                    📸 Gallery Kenangan
+                </h2>
+
+
+                <div class="gallery">
+
+
+                    <img
+                        src="zzzzzzzzzzxcv.jpeg"
+                        alt="Kenangan 1">
+
+
+                    <img
+                        src="qwertyui.jpeg"
+                        alt="Kenangan 2">
+
+
+                    <img
+                        src="asdfghjk.jpeg"
+                        alt="Kenangan 3">
+
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================
+                 VIDEO
+            ================================== -->
+
+            <section class="video-box reveal">
+
+
+                <h2>
+                    🎥 Video Kenangan
+                </h2>
+
+
+                <video
+                    controls
+                    preload="metadata">
+
+
+                    <source
+                        src="masil kecilnya .mp4"
+                        type="video/mp4">
+
+
+                    Browser kamu tidak mendukung
+                    pemutar video.
+
+
+                </video>
+
+            </section>
+
+
+
+            <!-- =================================
+                 QUOTE
+            ================================== -->
+
+            <section class="quote reveal">
+
+
+                <h2>
+                    ✨
+                </h2>
+
+
+                <p>
+
+                    "Semoga setiap langkahmu selalu dipenuhi
+                    kebahagiaan, kesehatan,
+                    dan orang-orang yang tulus
+                    menyayangimu."
+
+                </p>
+
+            </section>
+
+
+        </div>
+
+
+
+        <!-- =================================
+             FOOTER
+        ================================== -->
+
+        <footer>
+
+            <p>
+                Made with ✨
+                khusus untuk Dhanny
+            </p>
+
+        </footer>
+
+
+    </main>
+
+
+
+    <!-- =========================================
+         JAVASCRIPT
+    ========================================== -->
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
